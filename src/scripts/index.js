@@ -1,3 +1,4 @@
+require('../styles/index.scss');
 var Swiper=require('./common/libs/swiper/swiper.js');
 var swiperAn=require('./common/libs/swiper/swiper.animate1.0.2.min.js');
 var $=require('./common/libs/zepto-modules/zepto.js');
@@ -39,7 +40,7 @@ $('footer').find('button').tap(function(){
 	},100);
 });
 //---------------------第一部分----------------------
-$.post('http://localhost:8000/skill', {}, function(response){
+$.get('http://localhost:8080/skill', {}, function(response){
 	var str='';
 	for(var i=0,len=response.length;i<len;i++){
 		str+='<li><img src="images/hyuan.png"><span class="title">'+response[i].category+'</span><p>'+response[i].level+response[i].name+'<br>使用时间：'+response[i].time+'</p></li>';
@@ -58,7 +59,7 @@ $.post('http://localhost:8000/skill', {}, function(response){
 	},100);
 });
 //--------------------第二部分---------------------
-$.post('http://localhost:8000/work', {}, function(response){
+$.get('http://localhost:8080/work', {}, function(response){
 	var str='';
 	for(var i=0;i<response.length;i++){
 		str+='<li><img src="'+response[i].src+'"><ul><li>公司名称 ： '+response[i].name+'</li><li>公司性质 ： '+response[i].category+'</li><li>企业规模 ： '+response[i].peoples+'</li><li>职位 ：'+response[i].posts+'</li><li>工作时间 ：'+response[i].time+'</li></ul></li>'
@@ -66,7 +67,7 @@ $.post('http://localhost:8000/work', {}, function(response){
 	$('.ul-two').html(str);
 });
 //---------------------第三部分------------------------------
-$.post('http://localhost:8000/project', {}, function(response){
+$.get('http://localhost:8080/project', {}, function(response){
 	var str='';
 	for(var i=0;i<response.length;i++){
 		str+='<li><img src="'+response[i].image+'"><p>网站类型 ： '+response[i].category+'<br>网站名称 : '+response[i].name+'<br>网址 : '+response[i].url+'<br>简介 ：'+response[i].description+'<br>详情 ：'+response[i].detail+'<br>应用技术 ：'+response[i].tech+'<br></p></li>';

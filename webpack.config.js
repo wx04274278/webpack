@@ -38,14 +38,7 @@ module.exports={
 			{
 				test:/\.js$/,
 				loader:'babel'
-			},/*
-			{
-				test:/\.css$/,
-				loader:"style-loader!css-loader"
 			},{
-				test:/\.scss$/,
-				loader:"style!css!sass"
-			}*/{
 				test:/\.scss$/,
 				loader:ExtractTextPlugin.extract("style","css!sass")
 			}
@@ -55,7 +48,7 @@ module.exports={
 	plugins:[
 		new CopyWebpackPlugin([
 				{from:'./src/index.html',to:'./'},
-				{from:'./src/images',to:'./images',ignore:['*.gif']}
+				{from:'./src/images',to:'./images'}
 			]),
 		new ExtractTextPlugin('./index.css'),
 		new webpack.optimize.UglifyJsPlugin({

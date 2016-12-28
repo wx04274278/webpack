@@ -24,6 +24,10 @@ html, body {
     color:#000;
     margin: 0;
     padding: 0;
+    font-family: "微软雅黑";
+    p,h1,h2,h3,h4,h5,h6,span,a{
+        font-family: "微软雅黑";
+    }
 }
 .swiper-container {
     width: 100%;
@@ -38,9 +42,6 @@ html, body {
     position: absolute;
     bottom:0;
     right:0;
-}
-p,h1,h2,h3,h4,h5,h6,span,a{
-    font-family: "微软雅黑";
 }
 .swiper-container .p-container{
     @include display;
@@ -308,7 +309,7 @@ p,h1,h2,h3,h4,h5,h6,span,a{
             color:#fff;
             position: absolute;
             left:33px;
-            top:37px;
+            top:40px;
         }
         p{
             margin:0 15px;

@@ -1,0 +1,29 @@
+﻿[
+	{
+		"category":"企业网站",
+		"name":"众瑞智能仪器",
+		"url":"http://www.qdzryq.cn/",
+		"image":"images/logo1.png",
+		"description":"众瑞智能仪器有限公司的官方网站，详细介绍了众瑞智能仪器有限公司的主要情况",
+		"detail":"项目耗时3周，主要处理前端页面及程序嵌套，当时并未要求移动端适配，故该网站只适应于PC端应用",
+		"tech":"Html、Css2、Javascript等"
+	},
+	{
+		"category":"平台门户",
+		"name":"乐村淘",
+		"url":"http://www.lecuntao.com/",
+		"image":"images/logo1.jpg",
+		"description":"乐村淘是一个主要针对于农村市场的BtoBtoC+O2O电商平台",
+		"detail":"长期维护，功能迭代，包括平台整体UI改进以及功能模块的增加与性能的优化",
+		"tech":"Html、Css2、Javascript、Jquery、Ajax等"
+	},
+	{
+		"category":"平台门户",
+		"name":"牛摩商城",
+		"url":"http://mall.newmotor.com.cn/",
+		"image":"images/logo2.jpg",
+		"description":"全国摩托车网络销售服务联盟",
+		"detail":"项目初建耗时4月，从需求到页面设计，从页面设计到前端实现，从页面实现到功能开发和集成，从本地测试到平台上线等全程处理",
+		"tech":"Html、Css2、html5、Css3、Javascript、Jquery、Ajax等"
+	}
+]
